@@ -14,6 +14,9 @@ import com.lambazon.domain.Product;
 public class ProductRepository {
 	
 	private static Map<Integer, Product> products = new HashMap<>();
+	/**
+	 * A Joust 2 products to méthode generateProductData()
+	 */
 	
 	private static void generateProductData() {
 		int id=0;
@@ -22,6 +25,8 @@ public class ProductRepository {
 		products.put(++id, new Product(id, 30, 69.99, "JVC HAFX8R Headphone", "Riptidz, In-Ear"));
 		products.put(++id, new Product(id, 40, 32.50, "VTech CS6114 DECT 6.0", "Cordless Phone"));
 		products.put(++id, new Product(id, 50, 895.00, "NOKIA OEM BL-5J", "Cell Phone "));
+		products.put(++id, new Product(id, 70, 725.00, "SAMSUNG NOTE 7", "Cell Phone "));
+		products.put(++id, new Product(id, 62, 455.00, "SAMSUNG NOTE 4", "Cell Phone "));
 	}
 	
 	public List<Product> products() {
