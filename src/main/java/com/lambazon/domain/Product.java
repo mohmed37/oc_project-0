@@ -34,12 +34,33 @@ public class Product {
 
 	public int getQuantity() { return quantity;	}
 
-	public void setQuantity(int quantity) { this.quantity = quantity; }
+    /**
+     * Quantity lower than 0 = 0
+     * @param quantity
+     */
+
+	public void setQuantity(int quantity) {
+	    this.quantity = quantity;
+	    if(this.quantity <= 0)
+	        this.quantity = 0;
+    }
 
 	public double getPrice() { return price; }
 
-	public void setPrice(double price) { this.price = price; }
+    /**
+     * Price higher than 1000 = 1000
+     * @param price
+     */
 
+	public void setPrice(double price) {
+	    this.price = price;
+	    if (this.price < 0.0)
+	        this.price = 0.0;
+	    else if (this.price > 1000.0)
+	        this.price = 1000.0;
+
+
+    }
 
 	public double getInventoryPrice()
 	{
