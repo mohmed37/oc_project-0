@@ -29,10 +29,23 @@ public class ProductController {
 		model.addAttribute("prod", productService.product(id));
 		return "product";
 	}
+
+	/**
+	 * Integration of the total sum ProductionService in CalculateTotalInventoryAmount.
+	 * @return
+	 */
 	
 	private double calculateTotalInventoryAmount() {
-		// TODO fix calculation
-		 return 123456.78;
+		double sommeTotal = 0.0;
+		int i=1 ;
+		while (i<=productService.products().size())
+		{
+			sommeTotal+=productService.product(i).getInventoryPrice();
+			i =i + 1;
+
+		}
+		return sommeTotal;
+
 		
 	}
 }

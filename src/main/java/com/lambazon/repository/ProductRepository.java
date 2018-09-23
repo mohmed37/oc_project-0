@@ -20,13 +20,13 @@ public class ProductRepository {
 	
 	private static void generateProductData() {
 		int id=0;
-		products.put(++id, new Product(id, -2, 92.50, "Echo Dot", "(2nd Generation) - Black"));
-		products.put(++id, new Product(id, 20, 9.99, "Anker 3ft / 0.9m Nylon Braided", "Tangle-Free Micro USB Cable"));
-		products.put(++id, new Product(id, 30, 69.99, "JVC HAFX8R Headphone", "Riptidz, In-Ear"));
-		products.put(++id, new Product(id, 40, 32.50, "VTech CS6114 DECT 6.0", "Cordless Phone"));
-		products.put(++id, new Product(id, 50, 895.00, "NOKIA OEM BL-5J", "Cell Phone "));
-		products.put(++id, new Product(id, 70, 725.00, "SAMSUNG NOTE 7", "Cell Phone "));
-		products.put(++id, new Product(id, 62, 1100.00, "SAMSUNG NOTE 4", "Cell Phone "));
+		products.put(++id, new Product(id, -2, 92.50, "A-Echo Dot", "(2nd Generation) - Black"));
+		products.put(++id, new Product(id, 20, 9.99, "B-Anker 3ft / 0.9m Nylon Braided", "Tangle-Free Micro USB Cable"));
+		products.put(++id, new Product(id, 30, 69.99, "C-JVC HAFX8R Headphone", "Riptidz, In-Ear"));
+		products.put(++id, new Product(id, 40, 32.50, "D-VTech CS6114 DECT 6.0", "Cordless Phone"));
+		products.put(++id, new Product(id, 50, 895.00, "E-NOKIA OEM BL-5J", "Cell Phone "));
+		products.put(++id, new Product(id, 70, 725.00, "F-SAMSUNG NOTE 7", "Cell Phone "));
+		products.put(++id, new Product(id, 62, 1100.00, "G-SAMSUNG NOTE 4", "Cell Phone "));
 	}
 	
 	public List<Product> products() {
